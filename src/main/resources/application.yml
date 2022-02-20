@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/hvu
+    username: root
+    password:
+  jpa:
+    hibernate.ddl-auto: update
+    generate-ddl: true
+    show-sql: true
+
+app:
+  file:
+    location: C:/Users/admin/Downloads/Photos/HVU/HVU/assets
+    product: ${app.file.location}/banners
+    url-prefix: http://localhost:8080/file
+  url-local:
+    url: http://localhost:8080
